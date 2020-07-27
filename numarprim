@@ -1,10 +1,11 @@
 #program calcul numar prim
 
+import math
 numar=int(input('Introdu un numar pentru a verifica daca este numar prim: '))
+radical=int(math.sqrt(numar))
 lista_rest=[]
-for impartitor in range (2, numar):
+for impartitor in range (2, radical):
     rest=numar%impartitor
-    impartitor+=1
     lista_rest.append(rest)
 
 if 0 in lista_rest:
