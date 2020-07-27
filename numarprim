@@ -1,0 +1,13 @@
+#program calcul numar prim
+
+numar=int(input('Introdu un numar pentru a verifica daca este numar prim: '))
+lista_rest=[]
+for impartitor in range (2, numar):
+    rest=numar%impartitor
+    impartitor+=1
+    lista_rest.append(rest)
+
+if 0 in lista_rest:
+    print(f'Numarul {numar} NU este prim')
+else:
+    print(f'Numarul {numar} ESTE prim')
