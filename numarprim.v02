@@ -1,0 +1,12 @@
+#program calcul numar prim
+import math
+
+numar = int(input('Introdu un numar pentru a verifica daca este numar prim: '))
+if numar % 2 == 0:
+    print(f'Numarul {numar} NU este prim')
+else:
+    for impartitor in range(3, int(math.sqrt(numar))+1, 2):
+        if numar % impartitor == 0:
+            print(f'Numarul {numar} NU este prim')
+        else:
+            print(f'Numarul {numar} ESTE prim')
